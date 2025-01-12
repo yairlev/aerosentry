@@ -1,0 +1,147 @@
+/* General Reset */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    font-size: 700;
+    font-weight: 700;
+}
+
+.overlay h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Content Section */
+.content {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .overlay h1 {
+        font-size: 2rem;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+}
+
+.site-header {
+    position: absolute;
+    /* Makes the header float above content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Full-width header */
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0);
+    /* Optional: Semi-transparent background */
+    z-index: 10;
+    /* Higher than the video and overlay */
+}
+
+.logo {
+    height: 50px;
+    /* Adjust size as needed */
+    width: auto;
+    /* Maintain aspect ratio */
+}
+
+.section-header {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.section-sub {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.section-content {
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+.container {
+    padding: 4rem 1rem;
+}
+
+.flex-container {
+    display: flex;
+    position: relative;
+    color: #fff;
+}
+
+.container-figure {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin-left: 0px;
+    z-index: 0;
+}
+
+.figure-image {
+    border-style: none;
+    object-fit: cover;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.mt-1 { margin-top: 1.5rem; }
+.mt-2 { margin-top: 2.5rem; }
+.mt-3 { margin-top: 3rem; }
